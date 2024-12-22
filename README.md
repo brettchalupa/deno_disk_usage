@@ -60,3 +60,10 @@ import { getDiskUsage } from "@brettchalupa/deno-disk-usage";
 ## License
 
 Unlicense - Public Domain
+
+---
+
+## Dev Notes
+
+New versions are automatically published when code is pushed to `main` with a
+bumped `version` in `deno.json`.
