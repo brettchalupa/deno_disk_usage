@@ -1,4 +1,10 @@
 /**
+ * This module contains the interface defining `DiskUsage` and the function to
+ * get the disk usage of a given path with `getDiskUsage("/Some/Path")`
+ * @module
+ */
+
+/**
  * Details on how much of a given disk is used
  */
 export interface DiskUsage {

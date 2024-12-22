@@ -1,3 +1,8 @@
+/**
+ * This module contains a simple CLI that prints the disk usage for the paths passed in as args.
+ * @module
+ */
+
 import { getDiskUsage } from "./mod.ts";
 
 function main() {
