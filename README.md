@@ -21,6 +21,8 @@ On macOS, here's how this could be used:
 deno run --allow-run main.ts /System/Volumes/Data
 ```
 
+You can pass multiple disks in as separate args.
+
 Which outputs:
 
 ``` console
