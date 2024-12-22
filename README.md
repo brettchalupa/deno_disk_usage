@@ -21,6 +21,15 @@ On macOS, here's how this could be used:
 deno run --allow-run main.ts /System/Volumes/Data
 ```
 
+Which outputs:
+
+``` console
+$ deno run -A main.ts /System/Volumes/Data
+/System/Volumes/Data disk usage: 66 %
+/System/Volumes/Data used: 290010 MB
+/System/Volumes/Data used: 471482 MB
+```
+
 ## Use the Function
 
 Drop the `DiskUsage` interface and the `getDiskUsage()` function into your
