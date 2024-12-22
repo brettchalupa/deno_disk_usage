@@ -26,7 +26,7 @@ You can pass multiple disks in as separate args.
 
 Which outputs:
 
-``` console
+```console
 $ deno run -A main.ts /System/Volumes/Data
 /System/Volumes/Data disk usage: 66 %
 /System/Volumes/Data used: 290010 MB
@@ -46,6 +46,18 @@ const diskUsage = await getDiskUsage();
 console.log(`${diskUsage.percentageUsed}% of ${diskUage.path} disk used`);
 ```
 
+Or add it to your Deno project with:
+
+```
+deno add jsr:@brettchalupa/deno-disk-usage
+```
+
+And import it with:
+
+```ts
+import { getDiskUsage } from "@brettchalupa/deno-disk-usage";
+```
+
 ## License
 
-Public Domain (CC0)
+Unlicense - Public Domain
