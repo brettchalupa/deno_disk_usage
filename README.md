@@ -6,8 +6,9 @@ Deno does not include anything in its stdlib that returns disk size, usage, and
 free space. So this parses out the results of the `df` command, which is wildly
 available on \*nix systems.
 
-It's unclear how precise the data is, but it's good enough for some simple
-checking and monitoring.
+It's unclear how precise the data is (as in I never heard of a mebibyte before
+writing this code), but it's good enough for some simple checking and
+monitoring.
 
 Ideally Deno would include this data like it does for CPU and RAM. Another
 option could be to try to use the Rust
@@ -38,6 +39,8 @@ Drop the `DiskUsage` interface and the `getDiskUsage()` function into your
 project and then call it:
 
 ```ts
+import { getDiskUsage } from "jsr:@brettchalupa/deno-disk-usage";
+
 const diskUsage = await getDiskUsage();
 
 console.log(`${diskUsage.percentageUsed}% of ${diskUage.path} disk used`);
