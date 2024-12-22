@@ -1,4 +1,8 @@
 {
+  "name": "@brettchalupa/deno-disk-usage",
+  "version": "0.1.0",
+  "license": "UNLICENSE",
+  "exports": "mod.ts",
   "tasks": {
     "dev": "deno run --watch main.ts"
   }
