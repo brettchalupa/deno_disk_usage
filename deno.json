@@ -2,8 +2,13 @@
   "name": "@brettchalupa/deno-disk-usage",
   "version": "0.1.0",
   "license": "UNLICENSE",
-  "exports": "./mod.ts",
+  "exports": {
+    ".": "./mod.ts",
+    "./cli": "./main.ts"
+  },
   "tasks": {
-    "dev": "deno run --watch main.ts"
+    "dev": "deno run --allow-run --watch main.ts",
+    "check": "deno fmt --check && deno lint && deno check --all .",
+    "fix": "deno fmt && deno lint --fix"
   }
 }
