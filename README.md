@@ -27,7 +27,6 @@ You can pass multiple disks in as separate args.
 Which outputs:
 
 ```console
-$ deno run -A main.ts /System/Volumes/Data
 /System/Volumes/Data disk usage: 66 %
 /System/Volumes/Data used: 290010 MB
 /System/Volumes/Data used: 471482 MB
